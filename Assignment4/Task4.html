@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <Meta tags, Favicon aur Style -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech Club Register</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+    <!--Google Font (Poppins) -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+    <style>
+        /* root Variables */
+        :root {
+            --primary: #1e3a8a;       /* Dark Blue */
+            --accent: #3b82f6;        /* Light Blue */
+            --bg: #f4f6f9;            /* Page Background */
+            --card-bg: #ffffff;       /* Box Background */
+            --text: #222222;          /* Text Color */
+            --gap: 12px;              /* Spacing */
+        }
+
+        /* Universal (*) */
+        * {
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif; /* 5.3 Font */
+        }
+
+        /* Element (body, h1, nav, table, input) */
+        body {
+            background-color: var(--bg);
+            color: var(--text);
+            font-size: 15px;          /* 5.3 Font size */
+            line-height: 1.6;          /* 5.3 Line-height */
+            padding: 20px;
+        }
+
+        nav {
+            background-color: var(--primary);
+            padding: 10px 15px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-right: 15px;
+            font-weight: 600;
+        }
+
+        h1, h2 {
+            color: var(--primary);
+            margin-bottom: 10px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background: var(--card-bg);
+            margin-top: 10px;
+        }
+
+        th, td {
+            border: 1px solid #ccc;
+            padding: var(--gap);
+            text-align: left;
+        }
+
+        thead {
+            background-color: var(--primary);
+            color: white;
+        }
+
+        tfoot {
+            background-color: #e5e7eb;
+            font-weight: bold;
+        }
+
+        input[type="text"], input[type="email"], input[type="password"],
+        input[type="tel"], input[type="date"], select, textarea {
+            padding: 8px;
+            width: 100%;
+            max-width: 300px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        input[type="submit"] {
+            background-color: var(--primary);
+            color: white;
+            padding: 8px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        /* Selector 3: ID (#hero) */
+        #hero {
+            background-color: #dbeafe;
+            padding: 15px;
+            border-left: 5px solid var(--accent);
+            border-radius: 4px;
+            margin-bottom: 20px;
+        }
+
+        /* Selector 4: Class (.card) */
+        .card {
+            background-color: var(--card-bg);
+            border: 1px solid #ddd;
+            padding: 15px;
+            border-radius: 6px;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="register.html">Register</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <!-- #hero (ID) -->
+    <div id="hero">
+        <h1>Tech Club Event Portal</h1>
+        <p>Register below for upcoming events and workshops.</p>
+    </div>
+
+    <!-- .card (Class) - Table -->
+    <div class="card">
+        <h2>Upcoming Events</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Event</th>
+                    <th>Date</th>
+                    <th>Seats</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Coding Contest</td>
+                    <td>15 Nov 2026</td>
+                    <td>50</td>
+                </tr>
+                <tr>
+                    <td>Web Dev Workshop</td>
+                    <td>20 Nov 2026</td>
+                    <td>40</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="2">Total Seats</td>
+                    <td>90</td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+
+    <!-- .card (Class) - Form -->
+    <div class="card">
+        <h2>Student Registration</h2>
+        <form action="#" method="post">
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name" required><br><br>
+
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label for="pass">Password:</label><br>
+            <input type="password" id="pass" name="pass" required><br><br>
+
+            <label for="dob">DOB:</label><br>
+            <input type="date" id="dob" name="dob"><br><br>
+
+            <label for="phone">Phone:</label><br>
+            <input type="tel" id="phone" name="phone"><br><br>
+
+            <label>Year:</label><br>
+            <input type="radio" id="y1" name="year" value="1st"> <label for="y1">1st</label>
+            <input type="radio" id="y2" name="year" value="2nd"> <label for="y2">2nd</label><br><br>
+
+            <label for="event">Select Event:</label><br>
+            <select id="event" name="event">
+                <option value="coding">Coding Contest</option>
+                <option value="web">Web Dev Workshop</option>
+            </select><br><br>
+
+            <label>Interest:</label><br>
+            <input type="checkbox" id="c1" name="skill" value="coding"> <label for="c1">Coding</label>
+            <input type="checkbox" id="c2" name="skill" value="iot"> <label for="c2">IoT</label><br><br>
+
+            <label for="msg">Message:</label><br>
+            <textarea id="msg" name="msg" rows="3"></textarea><br><br>
+
+            <input type="submit" value="Register Now">
+        </form>
+    </div>
+
+</body>
+</html>
