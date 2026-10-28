@@ -1,13 +1,34 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Week 6 - Task 6.1</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lab 6 - Profile Card Assignment</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="box-demo">
-    <p>Box Model Test: Content + Padding + Border + Margin</p>
-  </div>
+
+  <header class="app-header">
+    <div class="app-header__title">My Profile Page</div>
+  </header>
+
+  <main class="profile-container">
+    
+    <article class="profile-card profile-card--blue">
+      <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=150" alt="Profile Sania" class="profile-card__avatar">
+      <h2 class="profile-card__name">Sania Naved</h2>
+      <p class="profile-card__role">CSE Student</p>
+      
+      <div class="profile-card__bio">
+        <p>Hi! I'm Sania Naved, a dedicated CSE student passionate about web development and java</p>
+        
+      </div>
+    </article>
+
+
+  </main>
+
+  <button class="fab-button" aria-label="Add item">+</button>
+
 </body>
 </html>
