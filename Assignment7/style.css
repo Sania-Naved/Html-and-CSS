@@ -21,15 +21,13 @@ body {
   grid-template-columns: 200px 1fr;
 
   grid-template-rows: auto 1fr auto;
-
-  /* Defining the named grid template areas */
   grid-template-areas:
     "head head"
     "side main"
     "foot foot";
 }
 
-/* Assigning elements to their grid areas */
+
 .header {
   grid-area: head;
   background-color: #1e293b;
@@ -64,9 +62,7 @@ body {
   padding: 20px;
   border-radius: 8px;
 
-  /* ==========================================================================
-     TASK 8.2: Auto-fitting responsive grid for inner cards
-     ========================================================================== */
+
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
   gap: 16px;
@@ -82,9 +78,7 @@ body {
   font-size: 0.9rem;
 }
 
-/* ==========================================================================
-   TASK 8.4: Flexbox inside Grid item (Icon and text side by side)
-   ========================================================================== */
+
 .card {
   display: flex;
   align-items: center;
