@@ -69,7 +69,6 @@ body {
   margin-bottom: 12px;
 }
 
-/* 5. Scrollable Bio (Task 6.3) */
 .profile-card__bio {
   height: 85px;
   overflow-y: auto;
@@ -97,6 +96,12 @@ body {
 .profile-card--blue .profile-card__avatar {
   border: 3px solid #3b82f6;
 }
+.profile-card--green {
+  border-color: #10b981;
+}
+.profile-card--green .profile-card__avatar {
+  border: 3px solid #10b981;
+
 
 
 
