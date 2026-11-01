@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Week 8: Dashboard with CSS Grid</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Dashboard Container -->
+  <div class="dashboard-grid">
+
+    <!-- Task 8.3: Header -->
+    <header class="header">
+      <h2>Dashboard Overview</h2>
+    </header>
+
+    <!-- Task 8.3: Sidebar -->
+    <aside class="sidebar">
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Analytics</a></li>
+          <li><a href="#">Settings</a></li>
+        </ul>
+      </nav>
+    </aside>
+
+    <!-- Task 8.3: Main Content Area -->
+    <main class="main-content">
+      <!-- Task 8.2 & 8.4: Auto-fitting cards using Flexbox inside -->
+      <div class="card">
+        <span class="icon">👥</span>
+        <div class="info">
+          <h3>1,250</h3>
+          <p>Users</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <span class="icon">💰</span>
+        <div class="info">
+          <h3>$8,420</h3>
+          <p>Revenue</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <span class="icon">📈</span>
+        <div class="info">
+          <h3>+24%</h3>
+          <p>Growth</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <span class="icon">📦</span>
+        <div class="info">
+          <h3>312</h3>
+          <p>Orders</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <span class="icon">⚡</span>
+        <div class="info">
+          <h3>99.9%</h3>
+          <p>Uptime</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <span class="icon">⭐</span>
+        <div class="info">
+          <h3>4.9</h3>
+          <p>Rating</p>
+        </div>
+      </div>
+    </main>
+
+    <!-- Task 8.3: Footer -->
+    <footer class="footer">
+      <p>&copy; 2026 Admin Dashboard</p>
+    </footer>
+
+  </div>
+
+</body>
+</html>
