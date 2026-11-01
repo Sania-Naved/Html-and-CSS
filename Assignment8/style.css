@@ -1,6 +1,4 @@
-/* ==========================================================================
-   RESET & GLOBAL SETTINGS
-   ========================================================================== */
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -14,7 +12,7 @@ body {
   line-height: 1.6;
 }
 
-/* Task 9.2: Responsive Images */
+
 img {
   max-width: 100%;
   height: auto;
@@ -26,12 +24,7 @@ a {
   color: inherit;
 }
 
-/* ==========================================================================
-   TASK 9.1: MOBILE-FIRST BASE STYLES (< 768px)
-   Task 9.2: rem Units Used For All Font Sizes
-   ========================================================================== */
 
-/* Task 9.3: Flexbox Navigation */
 .header {
   background-color: #ffffff;
   border-bottom: 1px solid #e2e8f0;
@@ -72,10 +65,10 @@ a {
 }
 
 .nav-cta {
-  display: none; /* Hidden on small mobile screens to conserve space */
+  display: none; 
 }
 
-/* Buttons */
+
 .btn {
   display: inline-block;
   padding: 0.75rem 1.5rem;
@@ -105,7 +98,7 @@ a {
   color: #2563eb;
 }
 
-/* Task 9.3: CSS Grid for Page Sections */
+
 .page-container {
   display: grid;
   grid-template-columns: 1fr;
@@ -115,7 +108,7 @@ a {
   margin: 0 auto;
 }
 
-/* Hero Section */
+
 .hero-section {
   display: grid;
   grid-template-columns: 1fr;
@@ -149,7 +142,7 @@ a {
   width: 100%;
 }
 
-/* Features Section */
+
 .section-title {
   text-align: center;
   font-size: 1.75rem;
@@ -186,7 +179,7 @@ a {
   color: #64748b;
 }
 
-/* CTA Section */
+
 .cta-section {
   background: linear-gradient(135deg, #2563eb, #1d4ed8);
   color: #ffffff;
@@ -206,7 +199,7 @@ a {
   opacity: 0.9;
 }
 
-/* Footer Section */
+
 .footer-section {
   text-align: center;
   font-size: 0.85rem;
@@ -216,9 +209,7 @@ a {
 }
 
 
-/* ==========================================================================
-   TASK 9.1: TABLET MEDIA QUERY (min-width: 768px)
-   ========================================================================== */
+
 @media (min-width: 768px) {
   .navbar {
     flex-direction: row;
@@ -247,7 +238,7 @@ a {
     flex-direction: row;
   }
 
-  /* Two-column layout for feature cards */
+
   .features-grid {
     grid-template-columns: repeat(2, 1fr);
     gap: 1.75rem;
@@ -263,16 +254,14 @@ a {
 }
 
 
-/* ==========================================================================
-   TASK 9.1: LAPTOP / DESKTOP MEDIA QUERY (min-width: 1024px)
-   ========================================================================== */
+
 @media (min-width: 1024px) {
   .page-container {
     padding: 3rem 2rem;
     row-gap: 5rem;
   }
 
-  /* Two-column split for hero section */
+
   .hero-section {
     grid-template-columns: 1fr 1fr;
     gap: 3.5rem;
@@ -282,7 +271,7 @@ a {
     font-size: 3rem;
   }
 
-  /* Three-column layout for feature cards */
+
   .features-grid {
     grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
